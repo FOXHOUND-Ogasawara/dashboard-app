@@ -1,10 +1,12 @@
-import { Drawer, List, ListItem, ListItemText, Toolbar } from '@mui/material';
+import { Drawer, List, ListItemButton, ListItemText, Toolbar } from '@mui/material';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface SideMenuProps {
   drawerWidth: number;
 }
 
-const SideMenu = ({drawerWidth}: SideMenuProps) => {
+const SideMenu: React.FC<SideMenuProps> = ({ drawerWidth }) => {
   return (
     <Drawer
       variant="permanent"
@@ -15,18 +17,15 @@ const SideMenu = ({drawerWidth}: SideMenuProps) => {
     >
       <Toolbar />
       <List>
-        <ListItem>
+        <ListItemButton component={Link} to="/">
           <ListItemText primary="ダッシュボード" />
-        </ListItem>
-        <ListItem>
+        </ListItemButton>
+        <ListItemButton component={Link} to="/notifications">
           <ListItemText primary="通知センター" />
-        </ListItem>
-        <ListItem>
-          <ListItemText primary="設定" />
-        </ListItem>
+        </ListItemButton>
       </List>
     </Drawer>
   );
-}
+};
 
 export default SideMenu;
