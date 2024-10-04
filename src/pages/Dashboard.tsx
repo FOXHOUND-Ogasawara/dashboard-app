@@ -15,7 +15,7 @@ const Dashboard: React.FC = () => {
             <Typography variant="h6" gutterBottom>
               サンプルチャート1
             </Typography>
-            <PlaceholderChart title="チャート1" />
+            <PlaceholderChart />
           </Paper>
         </Grid>
         {/* サンプルチャート2 */}
@@ -24,7 +24,7 @@ const Dashboard: React.FC = () => {
             <Typography variant="h6" gutterBottom>
               サンプルチャート2
             </Typography>
-            <PlaceholderChart title="チャート2" />
+            <PlaceholderChart />
           </Paper>
         </Grid>
       </Grid>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
-import { placeholderData } from '../data/PlaceholderData';
+import { placeholderData } from '../data/placeholderData';
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AA00FF'];
 
