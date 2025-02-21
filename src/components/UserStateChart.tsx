@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, XAxis, YAxis, Tooltip } from 'recharts';
+import { Bar, BarChart,  Legend,  ResponsiveContainer, XAxis, YAxis, Tooltip } from 'recharts';
 import { userData } from '../data/userData';
 
 
