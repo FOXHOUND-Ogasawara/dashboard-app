@@ -6,9 +6,7 @@ import { userData } from '../data/userData';
 const UserStateChart: React.FC = () => {
     return (
         <ResponsiveContainer width="100%" height={300}>
-            <BarChart
-                data={userData}
-            >
+            <BarChart  data={userData}>
                 <XAxis dataKey="month" />
                 <YAxis />
                 <Tooltip />
