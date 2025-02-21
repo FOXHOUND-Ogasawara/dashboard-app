@@ -27,4 +27,4 @@ const PlaceholderChart: React.FC = () => {
   );
 };
 
-export default PlaceholderChart;
+export default PlaceholderChart; ///importしたところだったら使えるよ　の意味
