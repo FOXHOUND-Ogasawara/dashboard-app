@@ -1,5 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
+import UserStatsChart from '../components/UserStatsChart';
+import SalesChart from '../components/SalesChart';
 import SalesepieChart from '../components/SalesPiechart';
 import CategorypieChart from '../components/CategorypieChart';
 
@@ -13,9 +15,25 @@ const Dashboard: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
-              商品別の売上金額
+              ユーザー統計
             </Typography>
-            <SalesepieChart />
+            <UserStatsChart />
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              売上データ
+            </Typography>
+            <SalesChart/>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+             商品別売上金額
+            </Typography>
+            <SalesepieChart/>
           </Paper>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -23,7 +41,7 @@ const Dashboard: React.FC = () => {
             <Typography variant="h6" gutterBottom>
               パイチャート
             </Typography>
-            <CategorypieChart />
+            <CategorypieChart/>
           </Paper>
         </Grid>
       </Grid>
