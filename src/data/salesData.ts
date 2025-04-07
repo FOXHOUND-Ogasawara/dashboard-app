@@ -1,3 +1,4 @@
+// 売上データの型を定義
 export interface SalesData {
   label: string;
   sales: number;
