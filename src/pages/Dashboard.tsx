@@ -1,7 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import PlaceholderChart from '../components/PlaceholderChart';
 import SalesChart from '../components/SalesChart';
+import CategoryPieChart from "../components/CategoryPieChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -13,13 +13,17 @@ const Dashboard: React.FC = () => {
         {/*売上推移グラフ*/}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              売上推移グラフ
-            </Typography>
             <SalesChart />
           </Paper>
         </Grid>
+        {/*商品カテゴリ別割合グラフ*/}
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <CategoryPieChart />
+          </Paper>
+        </Grid>
       </Grid>
+      
     </div>
   );
 };

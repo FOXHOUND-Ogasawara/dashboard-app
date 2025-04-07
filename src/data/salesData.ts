@@ -1,8 +1,9 @@
 export interface SalesData {
-  label: string;
-  sales: number;
+  label: string; // データのラベル（例: 日付、週、月）
+  sales: number; // 売上の値
 }
 
+// 日別売上データ
 export const dailySalesData: SalesData[] = [
   { label: '01-01', sales: 1000 },
   { label: '01-02', sales: 1200 },
@@ -13,6 +14,7 @@ export const dailySalesData: SalesData[] = [
   { label: '01-07', sales: 900 },
 ];
 
+// 週別売上データ
 export const weeklySalesData: SalesData[] = [
   { label: '第1週', sales: 7000 },
   { label: '第2週', sales: 8500 },
@@ -20,6 +22,7 @@ export const weeklySalesData: SalesData[] = [
   { label: '第4週', sales: 9000 },
 ];
 
+// 月別売上データ
 export const monthlySalesData: SalesData[] = [
   { label: '1月', sales: 30000 },
   { label: '2月', sales: 28000 },
@@ -30,6 +33,7 @@ export const monthlySalesData: SalesData[] = [
   { label: '7月', sales: 42000 },
 ];
 
+// 商品別売上データ（円グラフ用）
 export const productSalesData = [
   { name: '商品A', value: 10000 },
   { name: '商品B', value: 20000 },
