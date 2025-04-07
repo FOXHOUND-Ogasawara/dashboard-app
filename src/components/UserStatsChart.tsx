@@ -14,7 +14,7 @@ const UserStatsChart = () => {
   return (
     <BarChart width={730} height={250} data={userData}>
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="month" /> 
+      <XAxis dataKey="month" /> {/* month を X 軸に設定 */}
       <YAxis />
       <Tooltip />
       <Legend />

@@ -1,7 +1,7 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import PlaceholderChart from "../components/PlaceholderChart";
 import UserStatsChart from "../components/UserStatsChart";
+import ExtraSalesChart from "../components/ExtraSalesChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -12,20 +12,17 @@ const Dashboard: React.FC = () => {
       <Grid container spacing={3}>
         {/* ユーザー統計情報チャート1 */}
         <Grid item xs={12} md={6}>
-          <Typography variant="h6">
-            ユーザー統計情報
-          </Typography>
+          <Typography variant="h6">ユーザー統計情報</Typography>
           <UserStatsChart />
         </Grid>
-        {/* サンプルチャート2 */}
-        {/* <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              サンプルチャート2
-            </Typography>
-            <PlaceholderChart />
-          </Paper>
-        </Grid> */}
+
+        {/* 売上推移 */}
+        <Box sx={{ marginLeft: "28px" }}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h6">売上推移</Typography>
+            <ExtraSalesChart />
+          </Grid>
+        </Box>
       </Grid>
     </div>
   );
