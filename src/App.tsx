@@ -5,6 +5,7 @@ import Header from './components/Header';
 import SideMenu from './components/SideMenu';
 import Dashboard from './pages/Dashboard';
 import Notifications from './pages/Notifications';
+import Products from './pages/Products';// 商品一覧ページ
 
 const drawerWidth = 240;
 
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/notifications" element={<Notifications />} />
+              <Route path="/products" element={<Products />} />{/* 商品一覧ページ */}
             </Routes>
           </Box>
         </Box>

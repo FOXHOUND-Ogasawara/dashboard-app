@@ -1,3 +1,4 @@
+// 売上データの型を定義
 export interface SalesData {
   label: string; // データのラベル（例: 日付、週、月）
   sales: number; // 売上の値
@@ -42,3 +43,4 @@ export const productSalesData = [
   { name: '商品E', value: 12000 },
   { name: '商品F', value: 30000 },
 ];
+
