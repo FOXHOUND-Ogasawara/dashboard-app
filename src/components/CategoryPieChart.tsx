@@ -22,9 +22,9 @@ const COLORS = [
 // 商品カテゴリ別割合を表示するための円グラフを作成するコンポーネント
 const CategoryPieChart: React.FC = () => {
   return (
-    <div style={{ width: "100%", height: 400 }}>
+    <div style={{ width: "100%", height: 450 }}>
         <h2>商品カテゴリ別割合</h2>     {/* タイトルを追加 */} 
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="90%">
         <PieChart>
           <Pie
             data={categoryData} // データを指定

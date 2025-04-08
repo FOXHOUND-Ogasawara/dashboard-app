@@ -21,7 +21,7 @@ const SalesChart = () => {
   
 
   return (
-    <div style={{ width: "100%", height: 400 }}> {/* グラフのサイズを指定 */}
+    <div style={{ width: "100%", height: 450 }}> {/* グラフのサイズを指定 */}
       <h2>売上データ</h2> {/* タイトルを追加 */}
       <div>
         {/* データタイプを選択するボタンを追加 */}
@@ -29,7 +29,7 @@ const SalesChart = () => {
         <button onClick={() => setDataType("weekly")}>週別</button>
         <button onClick={() => setDataType("monthly")}>月別</button>
       </div>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="90%" height="85%">
         <LineChart data={getData()} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}> {/* 折れ線グラフの設定 */}
           <CartesianGrid strokeDasharray="3 3" /> {/* 背景のグリッド線 */}
           <XAxis dataKey= "label" /> {/* X軸の設定 */}

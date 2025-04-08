@@ -30,7 +30,7 @@ const Dashboard: React.FC = () => {
             <Typography variant="h6" gutterBottom>
               商品別売上データ
             </Typography>
-            <SalesPieChart /> {/* 商品別売上円グラフを表示 */}
+            <SalesPieChart /> 
         </Grid>
         {/* ユーザー統計情報チャート1 */}
         <Grid item xs={12} md={6}>
@@ -46,7 +46,6 @@ const Dashboard: React.FC = () => {
           </Grid>
         </Box>
       </Grid>
-      
     </div>
   );
 };
