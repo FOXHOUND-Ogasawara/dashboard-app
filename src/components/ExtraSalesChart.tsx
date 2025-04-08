@@ -23,7 +23,7 @@ const SalesLineChart = () => {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="record.revenue.total" stroke="#8884d8" />
+      <Line type="monotone" dataKey="record.revenue.total" stroke="#8884d8" name='売上推移' />
     </LineChart>
   );
 };

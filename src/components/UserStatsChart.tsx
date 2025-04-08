@@ -14,12 +14,12 @@ const UserStatsChart = () => {
   return (
     <BarChart width={730} height={250} data={userData}>
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="month" /> {/* month を X 軸に設定 */}
+      <XAxis dataKey="month" />
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey="newUsers" fill="#8884d8" /> {/* 新規ユーザー */}
-      <Bar dataKey="activeUsers" fill="#82ca9d" /> {/* アクティブユーザー */}
+      <Bar dataKey="newUsers" fill="#8884d8" name='新規ユーザー' /> {/* 新規ユーザー */}
+      <Bar dataKey="activeUsers" fill="#82ca9d" name='アクティブユーザー' /> {/* アクティブユーザー */}
     </BarChart>
   );
 };
