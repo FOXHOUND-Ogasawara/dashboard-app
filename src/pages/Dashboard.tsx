@@ -1,10 +1,10 @@
 import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import SalesChart from "../components/SalesChart";
 import CategoryPieChart from "../components/CategoryPieChart";
+import ExtraSalesChart from "../components/ExtraSalesChart";
+import SalesChart from "../components/SalesChart";
 import SalesPieChart from "../components/SalesPieChart"; // 商品別売上円グラフコンポーネントをインポート
 import UserStatsChart from "../components/UserStatsChart";
-import ExtraSalesChart from "../components/ExtraSalesChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -13,7 +13,6 @@ const Dashboard: React.FC = () => {
         ダッシュボード
       </Typography>
       <Grid container spacing={3}>
-        
         {/*売上推移グラフ*/}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
@@ -26,6 +25,18 @@ const Dashboard: React.FC = () => {
           <Paper sx={{ p: 2 }}>
             <CategoryPieChart />
           </Paper>
+        </Grid>
+        {/* 商品別売上の円グラフ */}
+        <Grid item xs={12} md={6}>
+          <Typography variant="h6" gutterBottom>
+            商品別売上データ
+          </Typography>
+          <SalesPieChart />
+        </Grid>
+        {/* ユーザー統計情報チャート1 */}
+        <Grid item xs={12} md={6}>
+          <Typography variant="h6">ユーザー統計情報</Typography>
+          <UserStatsChart />
         </Grid>
 
         {/* 商品別売上の円グラフ */}
