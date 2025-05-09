@@ -1,7 +1,10 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import UserStatsChart from '../components/UserStatsChart'; // UserStatsChartをインポート
-import SalesChart from '../components/SalesChart'; // SalesChartをインポート
+import UserStatsChart from '../components/UserStatsChart';
+import SalesChart from '../components/SalesChart';
+import RevenueSalesChart from '../components/RevenueSalesChart';
+import CategorySalesChart from '../components/CategorySalesChart';
+import PeriodSalesChart from '../components/PeriodSalesChart';
 
 const Dashboard: React.FC = () => {
   return (
@@ -24,6 +27,30 @@ const Dashboard: React.FC = () => {
               売上データ
             </Typography>
             <SalesChart />
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              売上合計データ
+            </Typography>
+            <RevenueSalesChart />
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              カテゴリー別売上データ
+            </Typography>
+            <CategorySalesChart />
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              期間別売上データ
+            </Typography>
+            <PeriodSalesChart />
           </Paper>
         </Grid>
       </Grid>
