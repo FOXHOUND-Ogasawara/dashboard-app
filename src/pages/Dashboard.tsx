@@ -1,7 +1,8 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
+import SalesPieChart from "../components/SalesPieChart";
+import RevenueSalesChart from "../components/RevenueSalesChart";
 import UserStatsChart from '../components/UserStatsChart';
-import PlaceholderChart from '../components/PlaceholderChart';
 import CategoryPieChart from '../components/CategoryPieChart';
 import SalesChart from '../components/SalesChart';
 
@@ -14,6 +15,14 @@ const Dashboard: React.FC = () => {
       <Grid container spacing={3}>
         {/* ユーザー統計情報 */}
         <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              商品別の売上金額
+            </Typography>
+            <SalesPieChart />
+          </Paper>
+        </Grid>
+         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               ユーザー統計情報
@@ -37,6 +46,14 @@ const Dashboard: React.FC = () => {
               商品カテゴリ別の割合
             </Typography>
             <CategoryPieChart />
+          </Paper>
+        </Grid>
+         <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              日別売り上げデータ
+            </Typography>
+            <RevenueSalesChart />
           </Paper>
         </Grid>
       </Grid>
