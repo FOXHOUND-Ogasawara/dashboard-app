@@ -1,6 +1,6 @@
 import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { products } from '../data/ProductData'; //  モックデータをインポート
+import { products } from '../data/productData'; //  モックデータをインポート
 
 
 // カラーパターンを定義
