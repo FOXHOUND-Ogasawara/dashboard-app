@@ -1,8 +1,10 @@
-import { Grid, Paper, Typography } from "@mui/material";
-import React from "react";
-import PlaceholderChart from "../components/PlaceholderChart";
+import { Grid, Paper, Typography } from '@mui/material';
+import React from 'react';
 import SalesPieChart from "../components/SalesPieChart";
 import RevenueSalesChart from "../components/RevenueSalesChart";
+import UserStatsChart from '../components/UserStatsChart';
+import CategoryPieChart from '../components/CategoryPieChart';
+import SalesChart from '../components/SalesChart';
 
 const Dashboard: React.FC = () => {
   return (
@@ -11,7 +13,7 @@ const Dashboard: React.FC = () => {
         ダッシュボード
       </Typography>
       <Grid container spacing={3}>
-        {/* サンプルチャート1 */}
+        {/* ユーザー統計情報 */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
@@ -20,13 +22,38 @@ const Dashboard: React.FC = () => {
             <SalesPieChart />
           </Paper>
         </Grid>
-        {/* サンプルチャート2 */}
+         <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              ユーザー統計情報
+            </Typography>
+            <UserStatsChart />
+          </Paper>
+        </Grid>
+           {/* 売上データ */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
-              折れ線グラフ
+              売上データ
             </Typography>
-            <RevenueSalesChart data={[]} />
+            <SalesChart />
+          </Paper>
+        </Grid>
+          {/* 商品カテゴリ別の割合 */}
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              商品カテゴリ別の割合
+            </Typography>
+            <CategoryPieChart />
+          </Paper>
+        </Grid>
+         <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              日別売り上げデータ
+            </Typography>
+            <RevenueSalesChart />
           </Paper>
         </Grid>
       </Grid>
