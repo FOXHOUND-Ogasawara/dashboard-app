@@ -1,10 +1,16 @@
-import { Box, CssBaseline, ThemeProvider, Toolbar, createTheme } from '@mui/material';
-import React, { useMemo, useState } from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import SideMenu from './components/SideMenu';
-import Dashboard from './pages/Dashboard';
-import Notifications from './pages/Notifications';
+import {
+  Box,
+  CssBaseline,
+  ThemeProvider,
+  Toolbar,
+  createTheme,
+} from "@mui/material";
+import React, { useMemo, useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import SideMenu from "./components/SideMenu";
+import Dashboard from "./pages/Dashboard";
+import Notifications from "./pages/Notifications";
 
 const drawerWidth = 240;
 
@@ -15,10 +21,10 @@ const App: React.FC = () => {
     () =>
       createTheme({
         palette: {
-          mode: darkMode ? 'dark' : 'light',
+          mode: darkMode ? "dark" : "light",
         },
       }),
-    [darkMode],
+    [darkMode]
   );
 
   const handleThemeChange = () => {
@@ -30,7 +36,7 @@ const App: React.FC = () => {
       <CssBaseline />
       <Router>
         <Header onThemeChange={handleThemeChange} darkMode={darkMode} />
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: "flex" }}>
           <SideMenu drawerWidth={drawerWidth} />
           <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
             <Toolbar />

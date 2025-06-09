@@ -1,6 +1,7 @@
-import { Grid, Paper, Typography } from '@mui/material';
-import React from 'react';
-import PlaceholderChart from '../components/PlaceholderChart';
+import { Paper, Typography } from "@mui/material";
+import Grid from "@mui/material/GridLegacy";
+import React from "react";
+import PlaceholderChart from "../components/PlaceholderChart";
 
 const Dashboard: React.FC = () => {
   return (

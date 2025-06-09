@@ -1,5 +1,5 @@
-import { AppBar, Switch, Toolbar, Typography } from '@mui/material';
-import React from 'react';
+import { AppBar, Switch, Toolbar, Typography } from "@mui/material";
+import React from "react";
 
 interface HeaderProps {
   onThemeChange: () => void;
