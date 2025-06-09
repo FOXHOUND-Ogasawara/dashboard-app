@@ -40,11 +40,11 @@ const SalesChart = () => {
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={getData()}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
+          <XAxis dataKey="label" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="sales" stroke="#8884d8" />
+          <Line type="monotone" dataKey="sales" name="売り上げ" stroke="#8884d8" />
         </LineChart>
       </ResponsiveContainer>
     </div>

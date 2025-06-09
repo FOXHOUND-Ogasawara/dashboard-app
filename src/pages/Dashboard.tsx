@@ -3,6 +3,7 @@ import React from 'react';
 import UserStatsChart from '../components/UserStatsChart';
 import PlaceholderChart from '../components/PlaceholderChart';
 import CategoryPieChart from '../components/CategoryPieChart';
+import SalesChart from '../components/SalesChart';
 
 const Dashboard: React.FC = () => {
   return (
@@ -20,7 +21,15 @@ const Dashboard: React.FC = () => {
             <UserStatsChart />
           </Paper>
         </Grid>
-    
+           {/* 売上データ */}
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              売上データ
+            </Typography>
+            <SalesChart />
+          </Paper>
+        </Grid>
           {/* 商品カテゴリ別の割合 */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
