@@ -1,36 +1,31 @@
-import React from "react";
-// recharts,userDataのimport
 import {
-  BarChart,
   Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
+  BarChart,
   Legend,
   ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
 } from "recharts";
-import{userData}from'../data/userData'
-
-const UserStatsChart=()=> {
-
+import { userData } from "../data/userData";
+const UserStatsChart = () => {
   return (
-    <div style={{width:'100%,height:300'}}>
-        {/* レスポンシブ対応 */}
-        <ResponsiveContainer>
-            {/* バーグラフの作成 */}
+    <ResponsiveContainer width="100%" height={300}>
       <BarChart data={userData}>
-        <XAxis dataKey="month"/>
-        <YAxis/>
-        <Tooltip/>
-        <Legend/>
-        {/* 二本のバーを並べる設定 */}
-        <Bar dataKey="newUsers" fill="#8884d8" name="新規ユーザー" />
-        <Bar dataKey="activeUsers" fill="#82ca9d" name="アクティブユーザー"/>
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="newUsers" fill="#8884D8" name="新規ユーザー" />
+        <Bar dataKey="activeUsers" fill="#82CA9D" name="アクティブユーザー" />
       </BarChart>
-      </ResponsiveContainer>
-      </div>
-
+    </ResponsiveContainer>
   );
-}
-
+};
 export default UserStatsChart;
+
+
+
+
+
+
