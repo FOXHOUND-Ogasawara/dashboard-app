@@ -1,7 +1,8 @@
-import { Grid, Paper, Typography } from '@mui/material';
-import React from 'react';
-import PlaceholderChart from '../components/PlaceholderChart';
-import SalesPieChart from '../components/SalesPieChart';
+import { Grid, Paper, Typography } from "@mui/material";
+import React from "react";
+import PlaceholderChart from "../components/PlaceholderChart";
+import SalesPieChart from "../components/SalesPieChart";
+import RevenueSalesChart from "../components/RevenueSalesChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -23,9 +24,9 @@ const Dashboard: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
-              サンプルチャート2
+              折れ線グラフ
             </Typography>
-            <PlaceholderChart />
+            <RevenueSalesChart data={[]} />
           </Paper>
         </Grid>
       </Grid>
