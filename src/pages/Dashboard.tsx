@@ -1,8 +1,8 @@
 import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/GridLegacy";
 import React from "react";
-import PlaceholderChart from "../components/PlaceholderChart";
 import UserStatsChart from "../components/UserStatsChart";
+import SalesChart from "../components/SalesChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -20,13 +20,13 @@ const Dashboard: React.FC = () => {
             <UserStatsChart />
           </Paper>
         </Grid>
-        {/* サンプルチャート2 */}
+        {/* 売上データ */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
-              サンプルチャート2
+              売上データ
             </Typography>
-            <PlaceholderChart />
+            <SalesChart />
           </Paper>
         </Grid>
       </Grid>
