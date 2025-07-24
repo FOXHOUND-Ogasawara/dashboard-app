@@ -1,20 +1,23 @@
+// App.tsx
 import {
   Box,
+  createTheme,
   CssBaseline,
   ThemeProvider,
   Toolbar,
-  createTheme,
 } from "@mui/material";
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import SideMenu from "./components/SideMenu";
 import Dashboard from "./pages/Dashboard";
 import Notifications from "./pages/Notifications";
+import Products from "./pages/Products";
+import Settings from "./pages/Settings";
 
 const drawerWidth = 240;
 
-const App: React.FC = () => {
+function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   const theme = useMemo(
@@ -32,23 +35,27 @@ const App: React.FC = () => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
-        <Header onThemeChange={handleThemeChange} darkMode={darkMode} />
-        <Box sx={{ display: "flex" }}>
-          <SideMenu drawerWidth={drawerWidth} />
-          <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-            <Toolbar />
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/notifications" element={<Notifications />} />
-            </Routes>
+    <>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Router>
+          <Header onThemeChange={handleThemeChange} darkMode={darkMode} />
+          <Box sx={{ display: "flex" }}>
+            <SideMenu drawerWidth={drawerWidth} />
+            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+              <Toolbar />
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/notifications" element={<Notifications />} />
+                <Route path="/settings" element={<Settings />} />
+              </Routes>
+            </Box>
           </Box>
-        </Box>
-      </Router>
-    </ThemeProvider>
+        </Router>
+      </ThemeProvider>
+    </>
   );
-};
+}
 
 export default App;
