@@ -1,15 +1,9 @@
-  export interface Category {
-    id: number;
-    category: string;
-    value: number;
-  }
-
-  export const categoryData: Category[] = [
-      // 6つのデータを追加
-      { id: 1, category: 'カテゴリA', value: 100 },
-      { id: 2, category: 'カテゴリB', value: 450 },
-      { id: 3, category: 'カテゴリC', value: 450 },
-      { id: 4, category: 'カテゴリD', value: 300 },
-      { id: 5, category: 'カテゴリE', value: 200 },
-      { id: 6, category: 'カテゴリF', value: 600 },
-  ];
+// モックデータの追加
+export const categoryData = [
+  { name: "カテゴリA", value: 400 },
+  { name: "カテゴリB", value: 300 },
+  { name: "カテゴリC", value: 200 },
+  { name: "カテゴリD", value: 278 },
+  { name: "カテゴリE", value: 189 },
+  { name: "カテゴリF", value: 110 },
+];
