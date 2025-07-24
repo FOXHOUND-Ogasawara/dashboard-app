@@ -13,4 +13,14 @@ export const products: Product[] = [
   { id: 4, name: "サンプルD", category: "カテゴリA", price: 7500 },
   { id: 5, name: "サンプルE", category: "カテゴリC", price: 80000 },
   { id: 6, name: "サンプルF", category: "カテゴリD", price: 300 },
+]
+
+// モックデータの追加
+export const categoryData = [
+  { name: "カテゴリA", value: 400 },
+  { name: "カテゴリB", value: 300 },
+  { name: "カテゴリC", value: 200 },
+  { name: "カテゴリD", value: 278 },
+  { name: "カテゴリE", value: 189 },
+  { name: "カテゴリF", value: 110 },
 ];
