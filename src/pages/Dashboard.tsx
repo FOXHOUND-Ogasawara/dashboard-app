@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
         ダッシュボード
       </Typography>
       <Grid container spacing={3}>
-        {/* サンプルチャート1 → ユーザー統計グラフ */}
+        {/* ユーザー統計グラフ */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
@@ -23,6 +23,7 @@ const Dashboard: React.FC = () => {
         </Grid>
 
         <Grid item xs={12} md={6}>
+           {/* ユーザー統計グラフ */}
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               売上データ
@@ -30,7 +31,7 @@ const Dashboard: React.FC = () => {
             <SalesChart />
           </Paper>
         </Grid>
-        
+
         {/* サンプルチャート2 */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
