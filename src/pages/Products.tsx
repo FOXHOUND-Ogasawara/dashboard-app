@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div>
       <Typography variant="h4" gutterBottom>
-        ダッシュボード
+        商品一覧
       </Typography>
       <Table>
         <TableHead>
