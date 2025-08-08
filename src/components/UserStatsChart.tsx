@@ -7,7 +7,7 @@ import { userData } from '../data/userData';
 
 const UserStatsChart: React.FC = () => {
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={300}>
       <BarChart data={userData}>
         <XAxis dataKey="month" />
         <YAxis />
