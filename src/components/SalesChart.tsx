@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { //タスク1棒グラフ
+import { //タスク2折れ線グラフ
   LineChart,
   Line,
   XAxis,
@@ -18,7 +18,7 @@ import { Box, Button, ButtonGroup } from "@mui/material";
 const SalesChart: React.FC = () => {
   const [mode, setMode] = useState<"daily" | "weekly" | "monthly">("daily");
 
-   // モードに応じたデータを取得
+   // モードに応じたデータを取得 
   const getData = () => {
     switch (mode) {
       case "weekly":
