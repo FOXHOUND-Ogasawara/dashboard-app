@@ -34,21 +34,11 @@ const Dashboard: React.FC = () => {
           </Paper>
         </Grid>
 
-        {/* サンプルチャート2 */}
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              サンプルチャート2
-            </Typography>
-            <PlaceholderChart />
-          </Paper>
-        </Grid>
-
         {/* 商品別売上円グラフ */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
-              商品別売上
+              商品別の売上合計
             </Typography>
             <SalesPieChart />
           </Paper>

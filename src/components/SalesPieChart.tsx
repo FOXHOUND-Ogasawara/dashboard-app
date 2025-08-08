@@ -2,7 +2,7 @@ import React from "react";
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from "recharts";
 import { productSalesData } from "../data/salesData"; // ここから読み込み
 
-const colors = ["yellow", "green", "red", "blue", "purple", "pink"];
+const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#AA00FF"];
 
 const SalesPieChart = () => {
   return (
