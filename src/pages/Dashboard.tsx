@@ -1,10 +1,10 @@
 import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/GridLegacy";
 import React from "react";
-import PlaceholderChart from "../components/PlaceholderChart";
 import UserStatsChart from "../components/UserStatsChart";
 import SalesChart from "../components/SalesChart";
 import SalesPieChart from "../components/SalesPieChart";
+import CategoryPieChart from "../components/CategoryPieChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -25,12 +25,21 @@ const Dashboard: React.FC = () => {
 
         {/* 売上データ */}
         <Grid item xs={12} md={6}>
-          {/* ユーザー統計グラフ */}
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               売上データ
             </Typography>
             <SalesChart />
+          </Paper>
+        </Grid>
+
+        {/* 商品カテゴリ別の割合グラフ */}
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              商品カテゴリ別の割合
+            </Typography>
+            <CategoryPieChart />
           </Paper>
         </Grid>
 
