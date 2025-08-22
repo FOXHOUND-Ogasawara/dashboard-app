@@ -5,6 +5,7 @@ import UserStatsChart from "../components/UserStatsChart";
 import SalesChart from "../components/SalesChart";
 import RevonueSalesChart from "../components/RevenueSalesChart";
 import CategorySalesChart from "../components/CategorySalesChart";
+import PeriodSalesChart from "../components/PeriodSalesChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -47,6 +48,15 @@ const Dashboard: React.FC = () => {
               追加実装 カテゴリ売上データ
             </Typography>
             <CategorySalesChart />
+          </Paper>
+        </Grid>
+                {/* 追加実装 売上データチャート*/}
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              追加実装 売上データ
+            </Typography>
+            <PeriodSalesChart />
           </Paper>
         </Grid>
       </Grid>
