@@ -27,7 +27,6 @@ const Dashboard: React.FC = () => {
               サンプルチャート2
             </Typography>
             <PlaceholderChart />
-            <Products/>
           </Paper>
         </Grid>
       </Grid>
