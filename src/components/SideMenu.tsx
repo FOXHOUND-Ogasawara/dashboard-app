@@ -26,14 +26,14 @@ const SideMenu: React.FC<SideMenuProps> = ({ drawerWidth }) => {
         <ListItemButton component={Link} to="/">
           <ListItemText primary="ダッシュボード" />
         </ListItemButton>
+        <ListItemButton component={Link} to="/products">
+          <ListItemText primary="商品一覧" />
+        </ListItemButton>
         <ListItemButton component={Link} to="/notifications">
           <ListItemText primary="通知センター" />
         </ListItemButton>
         <ListItemButton component={Link} to="/settings">
           <ListItemText primary="設定" />
-        </ListItemButton>
-        <ListItemButton component={Link} to="/products">
-          <ListItemText primary="商品一覧" />
         </ListItemButton>
       </List>
     </Drawer>
