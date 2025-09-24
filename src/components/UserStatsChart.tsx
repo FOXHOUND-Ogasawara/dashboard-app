@@ -13,7 +13,7 @@ const UserStatsChart = () => {
   return (
     <BarChart width={730} height={250} data={userData}>
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
+      <XAxis dataKey="month" />
       <YAxis />
       <Tooltip />
       <Legend />
