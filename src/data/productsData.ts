@@ -1,13 +1,16 @@
-
-    
-interface Product{
-    id:number;
-    name:string;
-    category:string;
-    price:number
+interface Product {
+  id: number;
+  name: string;
+  category: string;
+  price: number;
 }
 
-// 商品データ
+interface Category {
+  id: number;
+  category: string;
+  value: number;
+}
+
 export const products: Product[] = [
   {
     id: 1,
@@ -50,5 +53,43 @@ export const products: Product[] = [
     name: "Bluetoothイヤホン",
     category: "オーディオ",
     price: 12000,
+  },
+];
+
+export const categoryData: Category[] = [
+  {
+    id: 1,
+    category: "家電",
+    value: 120,
+  },
+  {
+    id: 2,
+    category: "家具",
+    value: 80,
+  },
+  {
+    id: 3,
+    category: "書籍",
+    value: 200,
+  },
+  {
+    id: 4,
+    category: "食品",
+    value: 150,
+  },
+  {
+    id: 5,
+    category: "衣料品",
+    value: 95,
+  },
+  {
+    id: 6,
+    category: "スポーツ用品",
+    value: 60,
+  },
+  {
+    id: 7,
+    category: "おもちゃ",
+    value: 40,
   },
 ];
