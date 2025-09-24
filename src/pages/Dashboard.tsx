@@ -3,6 +3,7 @@ import Grid from "@mui/material/GridLegacy";
 import React from "react";
 import UserStatsChart from "../components/UserStatsChart.tsx";
 import SalesChart from "../components/SalesChart.tsx";
+import CategorySalesBarChart from "../components/CategorySalesBarChart.tsx";
 
 const Dashboard: React.FC = () => {
   return (
@@ -26,6 +27,15 @@ const Dashboard: React.FC = () => {
               売上データ
             </Typography>
             <SalesChart />
+          </Paper>
+        </Grid>
+
+          <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              売上データ
+            </Typography>
+            <CategorySalesBarChart />
           </Paper>
         </Grid>
       </Grid>
