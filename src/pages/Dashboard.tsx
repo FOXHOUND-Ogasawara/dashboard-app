@@ -2,6 +2,7 @@ import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/GridLegacy";
 import React from "react";
 import PlaceholderChart from "../components/PlaceholderChart";
+import Products from "./Products";
 
 const Dashboard: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const Dashboard: React.FC = () => {
               サンプルチャート2
             </Typography>
             <PlaceholderChart />
+            <Products/>
           </Paper>
         </Grid>
       </Grid>
