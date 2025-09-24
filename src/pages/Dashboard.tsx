@@ -4,6 +4,8 @@ import React from "react";
 import UserStatsChart from "../components/UserStatsChart.tsx";
 import SalesChart from "../components/SalesChart.tsx";
 import CategorySalesBarChart from "../components/CategorySalesBarChart.tsx";
+import CategoryPieChart from "../components/CategoryPieChart";
+import SalesPieChart from "../components/SalesPieChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -21,7 +23,7 @@ const Dashboard: React.FC = () => {
           </Paper>
         </Grid>
 
-          <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               売上データ
@@ -30,7 +32,25 @@ const Dashboard: React.FC = () => {
           </Paper>
         </Grid>
 
-          <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              商品カテゴリ別割合
+            </Typography>
+            <CategoryPieChart />
+          </Paper>
+        </Grid>
+        
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              商品別の売上金額
+            </Typography>
+            <SalesPieChart />
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               売上データ

@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import SideMenu from "./components/SideMenu";
 import Dashboard from "./pages/Dashboard";
 import Notifications from "./pages/Notifications";
+import Products from "./pages/Products";
 
 const drawerWidth = 240;
 
@@ -41,6 +42,7 @@ const App: React.FC = () => {
           <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
             <Toolbar />
             <Routes>
+              <Route path="/products" element={<Products />} />
               <Route path="/" element={<Dashboard />} />
               <Route path="/notifications" element={<Notifications />} />
             </Routes>
