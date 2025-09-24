@@ -1,7 +1,6 @@
 import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/GridLegacy";
 import React from "react";
-import PlaceholderChart from "../components/PlaceholderChart";
 import CategoryPieChart from "../components/CategoryPieChart";
 
 const Dashboard: React.FC = () => {
@@ -11,23 +10,7 @@ const Dashboard: React.FC = () => {
         ダッシュボード
       </Typography>
       <Grid container spacing={3}>
-        {/* サンプルチャート1 */}
         <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              サンプルチャート1
-            </Typography>
-            <PlaceholderChart />
-          </Paper>
-        </Grid>
-        {/* サンプルチャート2 */}
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              サンプルチャート2
-            </Typography>
-            <PlaceholderChart />
-          </Paper>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
               商品カテゴリ別割合の円グラフ
