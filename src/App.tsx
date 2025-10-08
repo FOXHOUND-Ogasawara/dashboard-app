@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import SideMenu from "./components/SideMenu";
 import Dashboard from "./pages/Dashboard";
 import Notifications from "./pages/Notifications";
+import Products from "./pages/Products";
 
 const drawerWidth = 240;
 
@@ -43,6 +44,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/notifications" element={<Notifications />} />
+              <Route path="/products" element={<Products />} />
             </Routes>
           </Box>
         </Box>
