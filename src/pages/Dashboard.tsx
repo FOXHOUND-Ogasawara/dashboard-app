@@ -1,7 +1,7 @@
 import { Paper, Typography } from "@mui/material";
 import Grid from "@mui/material/GridLegacy";
 import React from "react";
-import PlaceholderChart from "../components/PlaceholderChart";
+import SalesPieChart from "../components/SalesPieChart";
 import CategoryPieChart from "../components/CategoryPieChart";
 
 const Dashboard: React.FC = () => {
@@ -19,13 +19,12 @@ const Dashboard: React.FC = () => {
             <CategoryPieChart />
           </Paper>
         </Grid>
-        {/* サンプルチャート2 */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
-              サンプルチャート2
+              商品別の売上金額
             </Typography>
-            <PlaceholderChart />
+            <SalesPieChart />
           </Paper>
         </Grid>
       </Grid>
