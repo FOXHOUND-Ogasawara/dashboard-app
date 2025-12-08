@@ -4,6 +4,8 @@ import React from "react";
 import UserStatsChart from "../components/UserStatsChart";
 import SalesChart from "../components/SalesChart";
 import RevenueSalesChart from "../components/RevenueSalesChart";
+import SalesPieChart from "../components/SalesPieChart";
+import CategoryPieChart from "../components/CategoryPieChart";
 
 const Dashboard: React.FC = () => {
   return (
@@ -12,7 +14,6 @@ const Dashboard: React.FC = () => {
         ダッシュボード
       </Typography>
       <Grid container spacing={3}>
-        {/* サンプルチャート1 */}
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
@@ -21,7 +22,7 @@ const Dashboard: React.FC = () => {
             <UserStatsChart />
           </Paper>
         </Grid>
-        {/* サンプルチャート2 */}
+
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
@@ -30,7 +31,25 @@ const Dashboard: React.FC = () => {
             <SalesChart />
           </Paper>
         </Grid>
-        {/* サンプルチャート3 */}
+
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              カテゴリ別の割合
+            </Typography>
+            <CategoryPieChart />
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 2 }}>
+            <Typography variant="h6" gutterBottom>
+              商品別の売上金額
+            </Typography>
+            <SalesPieChart />
+          </Paper>
+        </Grid>
+
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2 }}>
             <Typography variant="h6" gutterBottom>
